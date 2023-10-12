@@ -1,0 +1,1166 @@
+:root {
+  --bg-color-gray: #f9f9f9;
+  --bg-color-gray-medium: #b9b9b9;
+  --bg-color-green: #129E47;
+
+  --color-black-medium: #333;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Шапка */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+
+.wrapper-tel-header {
+  padding: 0 160px;
+  background-color: var(--bg-color-gray);
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper-tel-header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.wrapper-tel-header .container svg {
+  position: relative;
+  left: 15px;
+  transform: rotateX(5deg);
+}
+
+.tel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+  color: var(--color-black-medium);
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-decoration: none;
+}
+
+.tel-header::before {
+  content: url('./img/header/logo-tel-circle.svg');
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
+
+.wrapper-nav {
+  padding: 0 160px;
+  background-color: var(--bg-color-green);
+}
+
+.wrapper-nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.wrapper-nav .left-nav {
+  display: flex;
+  align-items: center;
+  gap: 98px;
+}
+
+.wrapper-nav .left-nav svg:hover {
+  cursor: pointer;
+}
+
+.wrapper-nav .right-nav {
+  display: flex;
+  align-items: center;
+  gap: 87px;
+}
+
+.wrapper-nav .right-nav form {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.wrapper-nav .right-nav form input {
+  border: none;
+  outline: none;
+  background-color: rgb(160, 216, 181);
+  width: 390px;
+  padding: 6px 30px;
+  font-family: var(--font-montserrat);
+  color: var(--color-white);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.wrapper-nav .right-nav form input::placeholder {
+  color: var(--color-white);
+}
+
+.wrapper-nav .right-nav form button {
+  border: none;
+  outline: none;
+  padding: 6px 14px 3px;
+}
+
+.social-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+
+
+/* Мэйн */
+.main {
+  padding-top: 105px;
+}
+
+/* Первый раздел, с цветами и заголовком */
+
+.title-n-floor {
+  background-image: url('./img/main/bg-floor.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 815px; */
+  padding: 50px 290px 160px;
+}
+
+.title-n-floor h1 {
+  padding: 72px 0 52px;
+  color: var(--bg-color-green);
+  font-family: var(--font-montserrat);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  max-width: 590px;
+}
+
+.title-n-floor button {
+  border: none;
+  outline: none;
+  background-color: var(--bg-color-green);
+  color: var(--color-white);
+  width: 200px;
+  padding: 12px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: var(--font-montserrat);
+  transition: all ease .3s;
+}
+
+.title-n-floor button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.wrapper-img-advantages {
+  display: flex;
+  align-items: flex-end;
+  gap: 80px;
+  padding-top: 100px;
+}
+
+.wrapper-img-advantages img:first-of-type {
+  position: relative;
+  top: 4px;
+}
+
+
+/* Раздел с текстом про питание */
+.desc-after-floor {
+  padding-left: 178px;
+  padding-right: 142px;
+}
+
+
+.desc-after-floor div {
+  border-radius: 0px 0px 60px 60px;
+  background: #FEFEFE;
+  box-shadow: 3px 11px 16px 0px rgba(18, 158, 71, 0.30);
+}
+
+.desc-after-floor h2 {
+  color: var(--bg-color-green);
+  font-family: var(--font-montserrat);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  padding: 64px 0 30px;
+  max-width: 954px;
+  margin: 0 auto;
+}
+
+.desc-after-floor p {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  padding-bottom: 89px;
+  max-width: 954px;
+  margin: 0 auto;
+}
+
+
+
+/* Раздел о пользе и ценности киселя */
+.slider-desc-jelly {
+  padding-left: 214px;
+  padding-right: 189px;
+}
+
+.slider-desc-jelly .container {
+  padding: 120px 0 155px;
+  position: relative;
+}
+
+.slider-desc-jelly h2 {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.slider-desc-jelly h2 b {
+  color: var(--bg-color-green);
+}
+
+.slider-desc-jelly .swiper {
+  height: 380px;
+}
+
+.slider-desc-jelly .swiper-slide {
+  border-radius: 20px;
+  background-color: var(--bg-color-gray);
+  box-shadow: 5px 15px 15px -4px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  height: 363px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slider-desc-jelly .swiper-slide h3 {
+  color: var(--color-black-medium);
+  font-family: var(--font-montserrat);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.slider-desc-jelly .swiper-slide p {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 20px 0 42px;
+}
+
+.slider-desc-jelly .swiper-slide button {
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  border-radius: 10px;
+  background-color: var(--bg-color-green);
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  outline: none;
+  transition: all ease .3s;
+}
+
+.slider-desc-jelly .swiper-slide button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 12px;
+  top: 55%;
+}
+
+.swiper-button-prev {
+  left: -30px;
+}
+
+.swiper-button-next {
+  right: -30px;
+}
+
+
+
+/* Модальные окна, подробнее про кисель */
+.modal-jelly {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 333333333;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .3);
+  transition: all ease .3s;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-jelly.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper-desc-jelly {
+  width: 914px;
+  padding: 60px;
+  border-radius: 45px;
+  background-color: var(--color-white);
+  position: relative;
+}
+
+.wrapper-desc-jelly div {
+  height: 280px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.wrapper-desc-jelly div::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--bg-color-gray-medium);
+  border-radius: 5px;
+  height: 10px;
+}
+
+.wrapper-desc-jelly div::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color-green);
+  border-radius: 5px;
+  height: 10px;
+}
+
+.wrapper-desc-jelly h3 {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  padding: 25px 0 15px;
+}
+
+.wrapper-desc-jelly p {
+  max-width: 770px;
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.wrapper-desc-jelly ul {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  list-style: inside;
+}
+
+.close-modal-jelly {
+  position: absolute;
+  right: 17px;
+  top: 25px;
+}
+
+
+/* Раздел с описание киселя */
+.desc-jelly-leovit {
+  padding-left: 178px;
+  padding-right: 142px;
+  padding-bottom: 130px;
+  position: relative;
+}
+
+
+
+.title-desc-jelly-leovit {
+  color: var(--bg-color-green);
+  font-family: var(--font-montserrat);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  padding-bottom: 40px;
+  padding-left: 110px;
+}
+
+.wrapper-logo-leovit {
+  opacity: .3;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 27px;
+}
+
+.form-select-jelly {
+  padding-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.form-select-jelly select {
+  background-color: var(--bg-color-green);
+  width: 784px;
+  height: 50px;
+  padding-left: 100px;
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-select-jelly select option {
+  background-color: var(--color-white);
+  color: var(--color-black-medium);
+  transition: all ease .3s;
+}
+
+.form-select-jelly svg {
+  position: absolute;
+  right: 40px;
+  top: 8px;
+}
+
+.wrapper-what-is-leovit {
+  border-radius: 60px;
+  background: #FEFEFE;
+  box-shadow: 7px 5px 28px 0px rgba(18, 158, 71, 0.30);
+  padding: 35px 102px 47px;
+}
+
+.nav-what-is-leovit ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: #b6b6b6;
+  font-family: var(--font-montserrat);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.nav-what-is-leovit ul li.active {
+  color: var(--bg-color-green);
+  transition: all ease .3s;
+}
+
+.nav-what-is-leovit ul li:hover {
+  cursor: pointer;
+}
+
+.wrapper-line-nav {
+  display: flex;
+  background-color: #d9d9d9;
+  margin: 15px 0 26px;
+}
+
+.wrapper-line-nav hr {
+  width: 150px;
+  height: 3px;
+  background-color: transparent;
+  border: none;
+  transition: all ease .3s;
+}
+
+.wrapper-line-nav hr.active {
+  background-color: var(--bg-color-green);
+}
+
+.line-second {
+  margin-left: 208px;
+}
+
+.line-third {
+  margin-left: 217px;
+}
+
+.line-four {
+  margin-left: 95px;
+}
+
+.wrapper-content-jelly-leovit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-change-content .change-block {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 280px;
+  transition: all ease .3s;
+}
+
+.wrapper-change-content .change-block.active {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+
+}
+
+.wrapper-change-content .first-content {
+  padding-top: 24px;
+  max-width: 813px;
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.wrapper-content-jelly-leovit .first-content p:nth-child(2) {
+  padding: 35px 0 50px;
+}
+
+.wrapper-content-jelly-leovit .first-content p:nth-child(3) {
+  color: var(--bg-color-green);
+  font-weight: 600;
+}
+
+.wrapper-content-jelly-leovit .first-content h3 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  padding-top: 59px;
+  text-align: right;
+  position: relative;
+  right: -70px;
+}
+
+.second-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 814px;
+  padding-top: 34px;
+}
+
+.second-content div {
+  width: 264px;
+  height: 204px;
+  border-radius: 20px;
+  background: #F9F9F9;
+  box-shadow: 5px 15px 15px -4px rgba(0, 0, 0, 0.25);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  padding: 0px 18px;
+  text-align: center;
+}
+
+
+.third-content {
+  max-width: 814px;
+  padding-top: 29px;
+}
+
+.third-content>p {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  padding-bottom: 60px;
+}
+
+.second-block-third-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper-icon-n-text-third-content {
+  display: flex;
+  width: 390px;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.wrapper-icon-n-text-third-content svg {
+  width: 64px;
+}
+
+.wrapper-icon-n-text-third-content div {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  color: #240B3F;
+  font-family: var(--font-montserrat);
+  font-style: normal;
+  line-height: 100%;
+}
+
+.wrapper-icon-n-text-third-content h4 {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.wrapper-icon-n-text-third-content p {
+  font-size: 15px;
+}
+
+
+.four-content {
+  max-width: 820px;
+}
+
+.four-content p {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  padding-bottom: 71px;
+}
+
+.wrapper-icon-four-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+}
+
+.wrapper-icon-four-content div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 264px;
+  height: 206px;
+  border-radius: 20px;
+  background: #F9F9F9;
+  box-shadow: 5px 15px 15px -4px rgba(0, 0, 0, 0.25);
+}
+
+#icon-sugar {
+  position: relative;
+  top: 10px;
+}
+
+
+
+/* Раздел "зачем пить кисель?" */
+.drink-jelly {
+  padding-left: 178px;
+  padding-right: 142px;
+}
+
+
+.drink-jelly h4 {
+  color: var(--bg-color-green);
+  font-family: var(--font-montserrat);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.wrapper-content-drink-jelly {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0 155px;
+}
+
+.wrapper-content-drink-jelly div {
+  border-radius: 20px;
+  background: #F9F9F9;
+  box-shadow: 5px 15px 15px -4px rgba(0, 0, 0, 0.25);
+  width: 376px;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.wrapper-content-drink-jelly p {
+  color: var(--color-black-medium);
+  font-family: var(--font-montserrat);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+
+
+/* Раздел ассортимента */
+.assortment {
+  padding-left: 178px;
+  padding-right: 140px;
+}
+
+.assortment .title-assortment {
+  color: var(--bg-color-green);
+  font-family: var(--font-montserrat);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.wrapper-content-assortment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 120px;
+}
+
+.wrapper-content-assortment div {
+  padding: 42px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 86px;
+  border-radius: 45px;
+  background: #FFF;
+  box-shadow: -1px 0px 11px 0px rgba(216, 222, 218, 0.70);
+  transition: all ease .3s;
+}
+
+.wrapper-content-assortment div:first-of-type {
+  padding: 50px 30px;
+  gap: 98px;
+}
+
+.wrapper-content-assortment div:hover {
+  box-shadow: -1px 0px 11px 0px var(--bg-color-green);
+}
+
+.wrapper-content-assortment button {
+  width: 297px;
+  color: var(--color-white);
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  border-radius: 10px;
+  background-color: var(--bg-color-green);
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  outline: none;
+  transition: all ease .3s;
+}
+
+.wrapper-content-assortment button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.wrapper-content-assortment .wrapper-text-assortment {
+  border: 4px solid var(--bg-color-green);
+  width: 358px;
+  padding: 72px 0;
+}
+
+.wrapper-content-assortment p {
+  color: var(--bg-color-green);
+  text-align: center;
+  font-family: var(--font-montserrat);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -1px;
+}
+
+.modal-assortment {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 333333333;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .3);
+  transition: all ease .3s;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-assortment.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper-modal {
+  border-radius: 45px;
+  background: #FFF;
+  position: relative;
+  max-width: 1045px;
+  padding: 0 110px 30px;
+}
+
+.close-modal-assortment {
+  position: absolute;
+  right: 17px;
+  top: 25px;
+}
+
+.close-modal-assortment:hover {
+  cursor: pointer;
+}
+
+.img-modal-assortment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 65px 0 30px;
+}
+
+.wrapper-modal .title-content-modal-assortment {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+}
+
+.title-content-modal-assortment b {
+  color: var(--bg-color-green);
+}
+
+.content-modal-assortment {
+  overflow: scroll;
+  overflow-x: unset;
+  padding-right: 20px;
+  height: 400px;
+}
+
+.content-modal-assortment p {
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.content-modal-assortment p:first-of-type {
+  padding-bottom: 40px;
+}
+
+.content-modal-assortment::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--bg-color-gray-medium);
+  border-radius: 5px;
+}
+
+.content-modal-assortment::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color-green);
+  border-radius: 5px;
+}
+
+
+
+/* Раздел "где купить?" */
+.where-to-buy {
+  padding-left: 174px;
+  padding-right: 147px;
+}
+
+.title-where-to-buy {
+  color: var(--color-black-medium);
+  text-align: center;
+  font-family: var(--font-montserrat);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  padding-bottom: 67px;
+}
+
+.content-where-to-buy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-bottom: 190px;
+}
+
+.content-where-to-buy div {
+  border-radius: 20px;
+  background: var(--bg-color-gray);
+  box-shadow: 5px 15px 15px -4px rgba(0, 0, 0, 0.25);
+  width: 270px;
+  padding: 50px 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+
+.content-where-to-buy p {
+  color: var(--color-black-medium);
+  text-align: center;
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  padding-top: 16px;
+}
+
+
+
+/* Раздел контакты */
+.contacts {
+  position: relative;
+  padding-left: 70px;
+  padding-bottom: 180px;
+}
+
+.contacts .container {
+  position: relative;
+}
+
+.wrapper-content-contacts {
+  margin-left: 60px;
+  border-radius: 14px;
+  background: var(--color-white);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
+  width: 783px;
+  height: 400px;
+  padding: 70px 135px 100px;
+  color: var(--color-black);
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title-contants {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.wrapper-content-contacts p b {
+  font-size: 28px;
+  font-weight: 500;
+  padding-top: 10px;
+  display: block;
+}
+
+.wrapper-content-contacts div {
+  display: flex;
+  gap: 70px;
+  padding: 30px 0 40px;
+}
+
+.btn-call {
+  color: var(--bg-color-green);
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  width: 210px;
+  padding: 22px 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--bg-color-green);
+  background-color: var(--color-white);
+  transition: all ease .3s;
+}
+
+.btn-call:hover {
+  background-color: rgba(53, 168, 3, 0.59);
+  cursor: pointer;
+}
+
+.left-tree {
+  position: absolute;
+  left: -250px;
+  top: -160px;
+}
+
+.right-tree {
+  position: absolute;
+  top: -250px;
+  left: 460px;
+  z-index: -3333333;
+}
+
+.wrapper-bg-vitamins {
+  width: 1025px;
+  height: 500px;
+  position: absolute;
+  top: -29px;
+  left: 700px;
+  overflow: hidden;
+  z-index: -7777777;
+}
+
+
+
+/* Подвал */
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #DEDEDE;
+  padding-bottom: 10px;
+}
+
+.list-nav-footer {
+  display: flex;
+  gap: 116px;
+  list-style: none;
+  align-items: center;
+  color: #262B38;
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.wrapper-social-footer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-btn-to-connect {
+  padding-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+}
+
+.wrapper-btn-to-connect button {
+  width: 210px;
+  border-radius: 10px;
+  border: 2px solid var(--bg-color-green);
+  background: var(--color-white);
+  color: var(--bg-color-green);
+  font-family: var(--font-montserrat);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  height: 59px;
+  padding: 7px 30px;
+  transition: all ease .3s;
+}
+
+.wrapper-btn-to-connect button:hover {
+  background-color: rgba(53, 168, 3, 0.59);
+  cursor: pointer;
+}
+
+.copyright-footer {
+  padding: 60px 0 140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 46px;
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
